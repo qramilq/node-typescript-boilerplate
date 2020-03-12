@@ -1,0 +1,38 @@
+{
+  "name": "node-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate Node.js project on express.js framework with Typescript support",
+  "author": "Ramil Ayupov <qramilq@mail.ru>",
+  "license": "MIT",
+  "keywords": [
+    "Node.js",
+    "express.js",
+    "typescript",
+    "nodemon"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qramilq/node-typescript-boilerplate.git"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "start:dev": "nodemon",
+    "start:prod": "cross-env NODE_ENV=production node dist/server",
+    "start:debug": "nodemon --config nodemon-debug.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/dotenv-flow": "^3.0.0",
+    "@types/express": "^4.17.3",
+    "cross-env": "^7.0.2",
+    "dotenv-flow": "^3.1.0",
+    "nodemon": "^2.0.2",
+    "rimraf": "^3.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3"
+  }
+}
