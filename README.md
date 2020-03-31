@@ -29,5 +29,5 @@ npm install
 
 - `build` - transpile TypeScript to ES6,
 - `start:dev` - starts server (NODE_ENV=development) in watch mode (using nodemon),
-- `start:debug` - same as `start:dev` + support debugging,
+- `start:debug` - same as `start:dev` + support debugging server,
 - `start:prod` - starts (NODE_ENV=production) server,

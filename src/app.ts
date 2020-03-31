@@ -1,10 +1,15 @@
 import express from 'express';
+import * as mainController from './controllers/main.controller';
 
 // Create Express server
 const app = express();
 
 // Express configuration
-// console.log('lol', process.env.PORT);
-// app.set('port', process.env.PORT || 3000);
+// app.use(/* */);
+
+/**
+ * Primary app routes.
+ */
+app.get('/', mainController.index);
 
 export default app;
